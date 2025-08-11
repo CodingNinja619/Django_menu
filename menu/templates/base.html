@@ -1,0 +1,24 @@
+{% load draw_menu %}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .active { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h3>Меню 1</h3>
+    {% draw_menu "main_menu" %}
+
+    {% block menu_content1 %}
+
+    {% endblock %}
+
+    <h3>Меню 2</h3>
+    {% draw_menu "blog" %}
+
+    {% block menu_content2 %}
+    
+    {% endblock %}
+</body>
+</html>
